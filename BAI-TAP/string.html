@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str =  "Tôi yêu ngôn ngữ lập trình Javascript";
+        dem = 0;
+        for (let i=0;i<str.length;i++){
+            if (str[i]=="a"){
+                dem++;
+            }
+        }
+        let arr = str.split(" ");
+        alert("Số chữ cái a la : " + dem);
+        alert("Số từ là : " +arr.length)
+        let strnew = str.replace("Javascript","Typescript");
+        alert(strnew);
+    </script>
+</body>
+</html>

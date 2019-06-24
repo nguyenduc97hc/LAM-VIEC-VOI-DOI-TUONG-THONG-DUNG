@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let ngaysinh = new Date(1997,9,1);
+        let date = new Date();
+        let tuoi = date.getFullYear()-ngaysinh.getFullYear();
+        let thang =tuoi*12+ date.getMonth()-ngaysinh.getMonth();
+        let ngay = thang*30 +date.getDay()-ngaysinh.getDay();
+        let gio = ngay*24;
+        let phut = gio*60;
+        let giay = phut*60;
+        alert("Toi da song duoc " + tuoi+" nam");
+        alert("Toi da song duoc " + thang+" thang");
+        alert("Toi da song duoc " + ngay+" ngay");
+        alert("Toi da song duoc " + gio+" gio");
+        alert("Toi da song duoc " + phut+" phut");
+        alert("Toi da song duoc " + giay+" giay");
+    </script>
+</body>
+</html>
